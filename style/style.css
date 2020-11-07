@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600&family=Raleway:wght@200&family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#bar {
+  position: fixed;
+  width: 0vh;
+  height: 30vh;
+  overflow: hidden;
+  background: #0009;
+  border-radius: 0 10px 10px 0;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 100;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#bar li a {
+  color: white;
+  text-decoration: none;
+}
+
+#bar li a i {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#bar li a i:hover {
+  color: gold;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#homePage {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, #1A1C29, #5a5e6a);
+  z-index: auto;
+}
+
+#homePage nav {
+  position: absolute;
+  top: 0;
+  left: 7.5%;
+  width: 85%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#homePage nav h1 {
+  font-size: 20px;
+  color: white;
+}
+
+#homePage nav h1 span {
+  font-size: 30px;
+  color: red;
+  -webkit-animation: point 1s linear infinite;
+          animation: point 1s linear infinite;
+}
+
+@-webkit-keyframes point {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes point {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#homePage nav ul li {
+  float: left;
+  margin-left: 10vh;
+  list-style: none;
+}
+
+#homePage nav ul li a {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#homePage nav ul li a:hover {
+  color: gold;
+}
+
+#homePage .homeInfo {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#homePage .homeInfo div h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+
+#homePage .homeInfo div h5 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  margin-bottom: 10vh;
+}
+
+#homePage .homeInfo div .button {
+  position: relative;
+  padding: 10px 10vh;
+  border-radius: 20px;
+  color: #1A1C29;
+  font-weight: 550;
+  border: none;
+  text-decoration: none;
+  background: lightblue;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#homePage .homeInfo div .button:hover {
+  background: #19C8CC;
+}
+
+#homePage .freelance {
+  width: 85%;
+  position: absolute;
+  bottom: 0%;
+  right: 7.5%;
+  margin: auto;
+  height: 8vh;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#homePage .freelance li {
+  color: white;
+  margin-left: 5vh;
+  font-size: 12px;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ff6d65, #FDCEAA);
+  overflow: hidden;
+}
+
+#about h1 {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+}
+
+#about div {
+  width: 75%;
+  height: 70vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  background: #2C3B3F;
+  -webkit-box-shadow: 10px 10px 20px #000000;
+          box-shadow: 10px 10px 20px #000000;
+  z-index: 10;
+}
+
+#about div p {
+  width: 70%;
+  font-size: px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+#about ul {
+  height: 15vh;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+}
+
+#about ul li i {
+  font-size: 25px;
+  color: black;
+}
+
+#about ul li i:hover {
+  color: #02A3A6;
+}
+
+#service {
+  width: 100%;
+  height: 100vh;
+  background: #00c8ff;
+  overflow: hidden;
+}
+
+#service h1 {
+  width: 100%;
+  height: 15vh;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#service .serviceInfo {
+  width: 85%;
+  height: 45vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service .serviceInfo div {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+}
+
+#service .serviceInfo div h1 {
+  width: 80%;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 15vh;
+}
+
+#service .serviceInfo div h4 {
+  width: 50%;
+  font-family: 'Playfair Display', serif;
+}
+
+#service ul {
+  width: 85%;
+  height: 35vh;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service ul li {
+  width: 30%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#service ul li i {
+  height: 10vh;
+  width: 10vh;
+  font-size: 25px;
+  color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#service ul li h2 {
+  margin-top: 2vh;
+  font-family: 'Righteous', cursive;
+}
+
+#service ul li h5 {
+  margin-top: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 6vh;
+  font-family: 'Playfair Display', serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#service ul li:hover i {
+  background-color: lightblue;
+  color: black;
+}
+
+#work {
+  height: 100vh;
+  width: 100%;
+  background-color: gold;
+}
+
+#work h1 {
+  width: 100%;
+  height: 15vh;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Righteous', cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#work ul {
+  width: 85%;
+  height: 85vh;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#work ul li {
+  width: 40vh;
+  height: 65vh;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+#work ul li img {
+  width: 100%;
+  height: 15vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#work ul li div {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#work ul li div h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+#work ul li div h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+#work ul li div p {
+  padding: 20px 0;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+#work ul li div .div1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#work ul li div .div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#work ul li div .div2 i:hover {
+  color: black;
+}
+
+#work ul li:hover {
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
